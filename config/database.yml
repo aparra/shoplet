@@ -5,24 +5,24 @@
 # gem 'activerecord-jdbcsqlite3-adapter'
 #
 development:
-  adapter: jdbc
-  driver: com.mysql.jdbc.Driver
-  url: jdbc:mysql://localhost/shoplet_dev
+  adapter: jdbcmysql
   username: shoplet_dev
   password: shoplet
+  host: localhost
+  database: shoplet_dev
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: jdbc
-  driver: com.mysql.jdbc.Driver
-  url: jdbc:mysql://localhost/shoplet_test
+  adapter: jdbcmysql
   username: shoplet_test
   password: shoplet
+  host: localhost
+  database: shoplet_test
 
 production:
-  adapter: jdbc
-  driver: com.mysql.jdbc.Driver
-  url: jdbc:mysql://localhost/shoplet_prod
+  adapter: jdbcmysql
   username: shoplet_prod
   password: shoplet
+  host: localhost
+  database: shoplet_prod

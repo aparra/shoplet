@@ -23,9 +23,9 @@ GEM
       arel (~> 3.0.2)
       tzinfo (~> 0.3.29)
     activerecord-jdbc-adapter (1.2.8)
-    activerecord-jdbcsqlite3-adapter (1.2.7)
+    activerecord-jdbcmysql-adapter (1.2.7)
       activerecord-jdbc-adapter (~> 1.2.7)
-      jdbc-sqlite3 (~> 3.7.2)
+      jdbc-mysql (~> 5.1.0)
     activeresource (3.2.12)
       activemodel (= 3.2.12)
       activesupport (= 3.2.12)
@@ -41,13 +41,13 @@ GEM
     coffee-script (2.2.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.6.1)
+    coffee-script-source (1.6.2)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.1)
     i18n (0.6.4)
-    jdbc-sqlite3 (3.7.2.1)
+    jdbc-mysql (5.1.24)
     journey (1.0.4)
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
@@ -60,7 +60,7 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.21)
-    multi_json (1.7.0)
+    multi_json (1.7.1)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -114,7 +114,7 @@ PLATFORMS
   java
 
 DEPENDENCIES
-  activerecord-jdbcsqlite3-adapter
+  activerecord-jdbcmysql-adapter
   coffee-rails (~> 3.2.1)
   jquery-rails
   jruby-openssl
