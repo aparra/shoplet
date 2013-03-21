@@ -5,10 +5,4 @@ class CreateProductTypes < ActiveRecord::Migration
       t.timestamps
     end
   end
-  
-  def data
-    ProductType.new('Book').save
-    ProductType.new('Music').save
-    ProductType.new('Movie').save
-  end
 end
