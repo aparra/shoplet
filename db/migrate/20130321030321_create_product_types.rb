@@ -7,8 +7,8 @@ class CreateProductTypes < ActiveRecord::Migration
   end
   
   def data
-    ProductTypes.new('Book').save
-    ProductTypes.new('Music').save
-    ProductTypes.new('Movie').save
+    ProductType.new('Book').save
+    ProductType.new('Music').save
+    ProductType.new('Movie').save
   end
 end
