@@ -6,23 +6,23 @@
 #
 development:
   adapter: jdbcmysql
-  username: shoplet_dev
-  password: shoplet
+  username: root
+  password:
   host: localhost
-  database: shoplet_dev
+  database: shoplet_dev  
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
   adapter: jdbcmysql
-  username: shoplet_test
-  password: shoplet
+  username: root
+  password:
   host: localhost
   database: shoplet_test
 
 production:
   adapter: jdbcmysql
-  username: shoplet_prod
-  password: shoplet
+  username: root
+  password:
   host: localhost
   database: shoplet_prod
